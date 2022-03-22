@@ -1,1 +1,1 @@
-My Python learning journey using Exercism.
+Showcasing my progress in learning the python langauge.
