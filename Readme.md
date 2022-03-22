@@ -1,1 +1,1 @@
-My Python learning journey using Exercism
+My Python learning journey using Exercism.
