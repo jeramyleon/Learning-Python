@@ -7,4 +7,6 @@ print(course.find('P'))
 print(course.find('o'))
 print(course.find('Beginners'))
 print(course.replace('Beginners', 'Absolute Beginners'))
+print(course.replace('P', 'J'))
+print('python' in course)
 
