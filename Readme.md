@@ -1,4 +1,6 @@
 Showcasing my progress in learning the python langauge.
 
 Tracking my progress:
-Beginner - Generating random values
+Beginner - finished
+intermediate - N/A
+advanced - N/A
