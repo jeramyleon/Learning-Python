@@ -4,6 +4,6 @@ Tracking my progress:
 
 Beginner - finished
 
-Intermediate - dictionaries
+Intermediate - collections
 
 Advanced - N/A
