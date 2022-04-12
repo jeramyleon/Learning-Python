@@ -43,6 +43,8 @@ for i in count(10):
     if i == 15:
         break
 
+for i in repeat(1, 4):
+    print(i)
 
 
 
