@@ -4,6 +4,6 @@ Tracking my progress:
 
 Beginner - finished
 
-Intermediate - itertools
+Intermediate - json
 
 Advanced - N/A
