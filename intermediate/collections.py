@@ -1,9 +1,6 @@
 # collections: Counter, namedtuple, OrderedDict, defaultdict,
 # deque 
-from collections import Counter
-from collections import namedtuple
-from collections import OrderedDict
-from collections import defaultdict
+from collections import Counter, namedtuple, OrderedDict, defaultdict, deque
 
 a = "aaaaabbbccc"
 my_counter = Counter(a)
@@ -28,9 +25,39 @@ ordered_dict['d'] = 4
 print(ordered_dict)
 
 
-d = defaultdict(int)
+d = defaultdict(list)
 d['a'] = 1
 d['b'] = 2
+print(d)
+print(d['a'])
+print(d['b'])
+print(d['c'])
+
+
+d = deque()
+d.append(1)
+d.append(2)
+d.appendleft(3)
+print(d)
+
+d.pop()
+print(d)
+
+d.popleft()
+print(d)
+
+d.clear()
+print(d)
+
+d.extend([4, 5, 6])
+print(d)
+
+d.extendleft([4, 5, 6])
+print(d)
+
+d.rotate(2)
+print(d)
+
 
 
 

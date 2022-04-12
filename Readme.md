@@ -4,6 +4,6 @@ Tracking my progress:
 
 Beginner - finished
 
-Intermediate - collections
+Intermediate - itertools
 
 Advanced - N/A
