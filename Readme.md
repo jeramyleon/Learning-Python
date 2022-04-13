@@ -4,6 +4,6 @@ Tracking my progress:
 
 Beginner - finished
 
-Intermediate - json
+Intermediate - generators
 
 Advanced - N/A
