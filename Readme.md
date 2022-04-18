@@ -4,6 +4,6 @@ Tracking my progress:
 
 Beginner - finished
 
-Intermediate - generators
+Intermediate - multi-processing
 
 Advanced - N/A

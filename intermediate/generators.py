@@ -1,20 +1,12 @@
 import sys
-def firstn(n):
-    nums = []
-    num = 0
-    while num < n:
-        nums.append(num)
-        num += 1
-    return nums 
 
-def firstn_generator(n):
-    num = 0
-    while num < n:
-        yield num
-        num += 1
+mygenerator = (i for i in range(1000000) if i % 2 == 0)
+print(sys.getsizeof(mygenerator))
+mylist = [i for i in range(1000000) if i % 2 == 0]
+print(sys.getsizeof(mylist))
 
-print(sys.getsizeof(firstn(10)))
-print(sys.getsizeof(firstn_generator(10)))
+
+
 
 
 
