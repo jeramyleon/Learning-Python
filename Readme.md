@@ -4,6 +4,6 @@ Tracking my progress:
 
 Beginner - finished
 
-Intermediate - multi-processing
+Intermediate - asterisk operator
 
 Advanced - N/A
