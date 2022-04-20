@@ -6,4 +6,4 @@ Beginner - finished
 
 Intermediate - finished
 
-Advanced - N/A
+Advanced - variables expressions statements
