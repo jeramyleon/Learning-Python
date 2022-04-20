@@ -4,6 +4,6 @@ Tracking my progress:
 
 Beginner - finished
 
-Intermediate - asterisk operator
+Intermediate - finished
 
 Advanced - N/A
