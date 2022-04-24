@@ -135,6 +135,74 @@ integer is implicitly converted to a float
 >>> print(99.0 / 100.0)
 0.99
 
+*STRING CONVERSIONS*
+- You can also use int() and float() to convert between strings and 
+integers
+- You will get an error if the string does not contain numeric characters
+>>> sval = '123'
+>>> type(sval)
+<class'str'>
+>>> print(sval + 1)
+TypeError: Can't convert 'int' object to str implicitly
+>>> ival = int(sval)
+>>> type(ival)
+<class'int'>
+>>> print(ival + 1)
+124
+>>> nsv = 'hello bob'
+>>> nsv = int(nsv)
+ValueError: invalid literal for int() with base 10: 'x'
+
+*USER INPUT*
+- WE can instruct Python to pause and read data from the user using
+the input() function
+- The input() function returns a string 
+>>> nam = input('Who are you? ')
+>>> print('Welcome', nam)
+Who are you? 
+your input -> Chuck
+Welcome Chuck
+
+*CONVERTING USER INPUT*
+- If we want to read a number from the user, we must convert it from a 
+string to a number using a type conversion function
+- Later we will deal with bad input data 
+>>> inp = input('Europe floor?')
+>>> usf = int(inp) + 1
+>>> print('US floor', usf)
+Europe floor?
+>>> 0
+US floor 1
+
+*COMMENTS IN PYTHON*
+- Anything after a # is ignored by Python
+- Why comment?
+    - Describe what is going to happen in a sequence of code
+    - Document who wrote the code or other ancillary information
+    - Turn off a line of code - perhaps temporarily 
+
+>>> # Get the name of the file and open it 
+>>> name = input('Enter file:')
+>>> handle = open(name, 'r')
+
+>>> # Count word frequency
+>>> counts = dict()
+>>> for line in handle:
+>>>     words = line.split()
+>>>     for word in words:
+>>>         counts[word] = counts.get(word, 0) + 1
+
+>>> # Find the most common word
+>>> bigcount = None
+>>> bigword = None
+>>> for word.count in counts.items():
+>>>     if bigcount is None or count > bigcount:
+>>>         bigword = word
+>>>         bigcount = count
+
+>>> # All done
+>>> print(bigword, bigcount)
+
 
 
 
