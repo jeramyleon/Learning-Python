@@ -6,5 +6,5 @@ Beginner - finished
 
 Intermediate - finished
 
-Advanced - functions
+Advanced - strings in python
 

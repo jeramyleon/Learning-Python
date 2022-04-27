@@ -129,8 +129,102 @@ arguments for a particular function invocation
 """)
 print('----------')
 
+
 print("""
+RETURN VALUES 
+-Often a function will take its arguments, do some computation and return
+a value to be used as the value of the function call in the calling
+expression. The return keyword is used for this.
 """)
+print('*code')
+def greet():
+    return "Hello"
+
+print(greet(), "Glenn") # ---> Hello Glenn
+print(greet(), "Sally") # ---> Hello Sally 
+print('code*')
 print('----------')
+
+print("""
+RETURN VALUE 
+- A 'fruitful' function is one that produces a result (for return value)
+- The return statement ends the function execution and 'sends back' the
+result of the function.
+
+def greet(lang):
+    if lang == 'es':
+        return 'Hola'
+    elif lang == 'fr':
+        return 'bonjour'
+    else:
+        return 'Hello'
+
+print(greet('en'), 'Glenn')
+print(greet('es'), 'Sally')
+print(greet('fr'), 'Michael')
+
+Output
+""")
+def greet(lang):
+    if lang == 'es':
+        return 'Hola'
+    elif lang == 'fr':
+        return 'bonjour'
+    else:
+        return 'Hello'
+
+print(greet('en'), 'Glenn')
+print(greet('es'), 'Sally')
+print(greet('fr'), 'Michael')
+print('------------------------')
+
+
+print("""
+MULTIPLE PARAMETERS/ARGUMENTS
+- We can define more than one parameter in the function definition
+- We simply add more arguments when we call the function
+- We match the number and order of arguments and parameters 
+
+def addtwo(a, b):
+    added = a + b
+    return added 
+
+x = addtwo(3, 5)
+print(x)
+
+Output
+""")
+def addtwo(a, b):
+    added = a + b
+    return added 
+
+x = addtwo(3, 5)
+print(x)
+print('----------------')
+
+print("""
+VOID(non-fruitful) FUNCTIONS
+- When a function does not return a value, we call it a "void" function
+- Functions that return values are "fruitful" functions
+- Void functions are not "fruitful"
+
+---------------------------------
+""")
+
+print("""
+TO FUNCTION OR NOT TO FUNCTION....
+- Organize your code into 'paragraphs' - capture a complete thought 
+and 'name it'
+- Don't repeat yourself - make it work once and then reuse it 
+- If something gets too long or complex, break it up into logical chunks
+and put those chunks in functions 
+- Make a library of common stuff that you do over and over - perhaps 
+share this with your friends 
+-------------------------------------------------
+""")
+
+
+
+
 
 
