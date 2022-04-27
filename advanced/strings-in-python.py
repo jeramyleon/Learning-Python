@@ -335,15 +335,40 @@ Output:
 line = 'Please have a nice day'
 print(line.startswith('Please'))
 print("""
-line.startswith('p')
+print(line.startswith('p'))
 Output:
 """)
-line.startswith('p')
+print(line.startswith('p'))
 print('---------------------------------------')
 
+print("""
+PARSING AND EXTRACTING 
 
+- From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008
 
-
+data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+atpos = data.find('@')
+print(atpos)
+Output:
+""")
+data = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+atpos = data.find('@')
+print(atpos)
+print("""
+sppos = data.find(' ', atpos)
+print(sppos)
+Output:
+""")
+sppos = data.find(' ', atpos)
+print(sppos)
+print("""
+host = data[atpos+1:sppos]
+print(host)
+Output:
+""")
+host = data[atpos+1:sppos]
+print(host)
+print('---------------------------------')
 
 
 
