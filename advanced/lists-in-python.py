@@ -149,3 +149,291 @@ x = [1, 2, 'joe', 99]
 print(len(x))
 Output:
 """)
+x = [1, 2, 'joe', 99]
+print(len(x))
+print('------------------------------------')
+
+print("""
+USING THE RANGE FUNCTION
+
+- The range function returns a list of numbers that range from
+zero to one less than the parameter 
+- We can construct an index loop for and an integer iterator 
+
+print(range(4))
+Output:
+""")
+print(range(4))
+print("""
+friends = ['Joseph', 'Glenn', 'Sally']
+print(len(friends)) 
+Output:
+""")
+friends = ['Joseph', 'Glenn', 'Sally']
+print(len(friends)) 
+print("""
+print(range(len(friends)))
+Output: 
+""")
+print(range(len(friends)))
+print('----------------------------------------')
+
+print("""
+A TALE OF TWO LOOPS... 
+
+Ex.
+friends = ['Joseph', 'Glenn', 'Sally']
+
+for friend in friends:
+    print('Happy New Year:', friend)
+
+for i in range(len(friends)):
+    friend = friends[i]
+    print('Happy New Year:', friend)
+------------------------------------------------
+CONCATENATING LISTS USING +
+
+- We can create a new list by adding two existing lists together 
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = a + b
+print(c)
+Output:
+""")
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = a + b
+print(c)
+print("""
+print(a)
+Output: 
+""")
+print(a)
+print("""
+----------------------------------------------------------------
+LISTS CAN BE SLICED USING:
+
+- Remember: Just like in strings, the second number is "up to but 
+not including"
+
+t = [9, 41, 12, 3, 74, 15]
+print(t[1:3])
+Output:
+""")
+t = [9, 41, 12, 3, 74, 15]
+print(t[1:3])
+print("""
+print(t[:4])
+Output: 
+""")
+print(t[:4])
+print("""
+print(t[3:])
+Output: 
+""")
+print(t[3:])
+print("""
+print(t[:])
+Output: 
+""")
+print(t[:])
+print("""
+BUILDING A LIST FROM SCRATCH
+
+- We can create an empty list and then add elements using the
+append method 
+- The list stays in order and new elements are added at the end of
+the list 
+
+stuff = list()
+stuff.append('book')
+stuff.append(99)
+print(stuff)
+Output:
+""")
+stuff = list()
+stuff.append('book')
+stuff.append(99)
+print(stuff)
+print("""
+stuff.append('cookie')
+print(stuff)
+Output: 
+""")
+stuff.append('cookie')
+print(stuff)
+print("""
+-------------------------------------------------------------------
+IS SOMETHING IN A LIST?
+
+- Python provides two operators that let you check if an item is 
+in a list
+- These are logical operators that return True or False 
+- They do not modify the list 
+
+some = [1, 9, 21, 10, 16]
+print(9 in some)
+Output:
+""")
+some = [1, 9, 21, 10, 16]
+print(9 in some)
+print("""
+print(15 in some)
+Output: 
+""")
+print(15 in some)
+print("""
+print(20 not in some)
+Output: 
+""")
+print(20 not in some)
+
+print("""
+--------------------------------------------------------------
+LISTS ARE IN ORDER 
+
+- A list can hold many items and keeps those items in the order
+until we do something to change the order 
+- A list can be sorted(i.e, change its order)
+- The sort method (unlike in strings) means "sort yourself"
+
+friends = ['Joseph', 'Glenn', 'Sally']
+friends.sort()
+print(friends)
+Output:
+""")
+friends = ['Joseph', 'Glenn', 'Sally']
+friends.sort()
+print(friends)
+print("""
+print(friends[1])
+Output: 
+""")
+print(friends[1])
+print("""
+-----------------------------------------------------------------
+BUILT-IN FUNCTIONS AND LISTS 
+
+- There are a number of functions built into Python that take lists 
+as parameters
+- Remember the loops we built? These are much simpler. 
+
+nums = [3, 41, 12, 9, 74, 15]
+print(len(nums))
+Output:
+""")
+nums = [3, 41, 12, 9, 74, 15]
+print(len(nums))
+print("""
+print(max(nums))
+Output: 
+""")
+print(max(nums))
+print("""
+print(min(nums))
+Output: 
+""")
+print(min(nums))
+print("""
+print(sum(nums))
+Output: 
+""")
+print(sum(nums))
+print("""
+print(sum(nums)/len(nums))
+Output: 
+""")
+print(sum(nums)/len(nums))
+print("""
+----------------------------------------------------------
+CALCULATING AVERAGE 
+
+total = 0
+count = 0
+while True:
+    inp = input('Enter a number: ')
+    if inp == 'done' : break
+    value = float(inp)
+    total = total + value
+    count = count + 1
+
+average = total / count
+print('Average:', average)
+Output:
+""")
+total = 0
+count = 0
+while True:
+    inp = input('Enter a number: ')
+    if inp == 'done' : break
+    value = float(inp)
+    total = total + value
+    count = count + 1
+
+average = total / count
+print('Average:', average)
+print("""
+numlist = list()
+while True:
+    inp = input('Enter a number: ')
+    if inp == 'done' : break
+    value = float(inp)
+    numlist.append(value)
+
+average = sum(numlist) / len(numlist)
+print('Average:', average)
+Output:
+""")
+numlist = list()
+while True:
+    inp = input('Enter a number: ')
+    if inp == 'done' : break
+    value = float(inp)
+    numlist.append(value)
+
+average = sum(numlist) / len(numlist)
+print('Average:', average)
+print('----------------------------------------------------')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

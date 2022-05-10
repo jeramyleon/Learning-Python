@@ -6,5 +6,5 @@ Beginner - finished
 
 Intermediate - finished
 
-Advanced - lists in python
+Advanced - string-parsing
 
