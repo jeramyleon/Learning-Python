@@ -6,5 +6,4 @@ Beginner - finished
 
 Intermediate - finished
 
-Advanced - web-scraping
-
+Advanced - databases
