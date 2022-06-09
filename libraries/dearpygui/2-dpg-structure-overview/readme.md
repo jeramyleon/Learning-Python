@@ -1,4 +1,4 @@
-Dpg structure overview
+DPG Structure Overview
 -----------------------------------------------------------------------------
 
 A DPG app will have an overall structure as follows: 
@@ -19,38 +19,47 @@ Setup
 -------------------------------------------------------------------------------
 
 All DPG apps must do 3 things: 
+
     - Create and Destroy context 
+
     - Create and show Viewport 
-    - Setup and start DearPyGui 
--------------------------------------------------------------------
-THE CONTEXT 
+
+    - Setup & Start DearPyGui
+
+The Context
+-------------------------------------------------------------------------------
+
 To access any DPG commands the context must be created with
-create_context This should be the first DPG command and it's typical 
+`create_context` This should be the first DPG command and it's typical 
 to perform this with an import. 
 
-Proper clean up of DPG can be done using destroy_context.
+Proper clean up of DPG can be done using `destroy_context`.
 
 Creating and destroying the context and also setup and start dearpygui
 are useful when the DPG needs to be started and stopped multiple times 
 in one python session. 
 
-! Warning 
-If create_context is not first DPG will not start (and will probably 
+! Warning:  
+If `create_context` is not first DPG will not start (and will probably 
 crash). 
----------------------------------------------------------------------
-THE VIEWPORT 
+
+The Viewport
+------------------------------------------------------------------------------
+
 The viewport is the window created by the operating system. 
 
-The viewport needs to be explicitly created using create_viewport and 
-shown using show_viewport 
+The viewport needs to be explicitly created using `create_viewport` and 
+shown using `show_viewport` 
 
 Code: the-viewport.py
----------------------------------------------------------------------
-THE RENDER LOOP 
+
+The Render Loop 
+--------------------------------------------------------------------------
+
 The render loop is responsible for displaying items, partially
 maintaining state and callbacks. 
 
-The render loop is completely handled by the start_dearpygui command. 
+The render loop is completely handled by the `start_dearpygui` command. 
 
 In some cases it's necessary to explicitly create the render loop so
 you can call python commands that may need to run every frame. Such as per-frame ticker or counter update functions. 
