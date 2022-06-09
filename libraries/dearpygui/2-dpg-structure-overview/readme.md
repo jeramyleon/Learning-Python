@@ -1,21 +1,22 @@
-DPG STRUCTURE OVERVIEW
+Dpg structure overview
 -----------------------------------------------------------------------------
 
 A DPG app will have an overall structure as follows: 
 
-    ..* Setup
+    - Setup
 
-    ..* Context 
+    - Context 
 
-    ..* Viewport
+    - Viewport
 
-    ..* Render loop
+    - Render loop
 
-    ..* Items
+    - Items
 
-    ..* Primary Window 
+    - Primary Window 
 
-SETUP 
+Setup
+-------------------------------------------------------------------------------
 
 All DPG apps must do 3 things: 
     - Create and Destroy context 
