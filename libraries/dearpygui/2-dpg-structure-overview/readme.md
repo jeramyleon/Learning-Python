@@ -69,26 +69,26 @@ code: the-render-loop.py
 !Warning 
 The maual render loop must be created after `setup_dearpygui`
 
-ITEM OVERVIEW 
+Item Overview 
 ----------------------------------------------------------------------------
 
 DPG can be broken down into Items, UI items, Containers 
 
 Items:
 
-    - Items are anything in the library (i.e button, registries, windows, etc).
+    Items are anything in the library (i.e button, registries, windows, etc).
 
 UI Items:
 
-    - Any item in DPG that has a visual component (i.e. button, listbox,window, etc).
+    Any item in DPG that has a visual component (i.e. button, listbox,window, etc).
 
 Containers:
 
     Items that can hold other items. (i.e. window, groups, registries, etc). 
 
-THE PRIMARY WINDOW
+The Primary Window 
 -------------------------------------------------------------------------------
- 
+
 DPG can assign one window to be the primary window. The primary window will fill the viewport and always be drawn behind other windows. 
 
 code: the-primary-window.py
